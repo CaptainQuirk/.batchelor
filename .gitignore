@@ -1,0 +1,10 @@
+# Ignoring npm modules
+node_modules
+
+# Ignoring directories with actual content
+# to transform
+images/*
+!images/jpg/in/empty
+!images/jpg/out/empty
+!images/png/in/empty
+!images/png/out/empty
