@@ -3,7 +3,8 @@ node_modules
 
 # Ignoring directories with actual content
 # to transform
-workplace/images/*
+workplace/images/jpg/in/*
+workplace/images/png/out/*
 !workplace/images/empty
 !workplace/images/jpg/empty
 !workplace/images/jpg/in/empty
@@ -12,6 +13,6 @@ workplace/images/*
 !workplace/images/png/in/empty
 !workplace/images/png/out/empty
 
-workplace/scripts/*
+workplace/scripts/bash/*
 !workplace/scripts/empty
 !workplace/scripts/bash/empty
