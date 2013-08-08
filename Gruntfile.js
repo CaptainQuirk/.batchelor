@@ -10,19 +10,25 @@ module.exports = function (grunt) {
     watch: {
       png: {
         options: {
-          event: [ 'added' ],
-          livereload: true
+          event: [ 'added' ]
         },
         files: [ 'images/png/in/**/*.png' ],
         tasks: [ 'imagemin:png' ]
       },
       jpg: {
         options: {
-          event: [ 'added' ],
-          livereload: true
+          event: [ 'added' ]
         },
         files: [ 'images/jpg/in/**/*.jpg', 'images/jpg/in/**/*.jpeg' ],
         tasks: [ 'imagemin:jpg' ]       
+      },
+      bash: {
+        options: {
+          event: [ 'added' ],
+          spawn: false
+        },
+        files: [ 'workplace/scripts/bash/**' ],
+        tasks: [ 'shell_runner:execute' ],
       }
     },
     imagemin: {
@@ -51,12 +57,24 @@ module.exports = function (grunt) {
           }
         ]
       }
+    },
+    shell_runner: {
+      execute: {
+        options: {
+          stdout: true,
+          stderr: true,
+          failOnError: true
+        },
+        files: [ { src: 'workplace/scripts/bash/**/*.sh' } ]
+      }
     }
   });
+
 
   // Loading plugins. They have to be loaded one at a time
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
+  grunt.loadNpmTasks('grunt-shell-runner');
 
   grunt.registerTask('default', 'watch', 'imagemin');
 };
