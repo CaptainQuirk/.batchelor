@@ -1,8 +1,14 @@
 # Ignoring npm modules
 node_modules
 
+# Ignoring tmp directory content
+# but not the directory itself
+tmp
+!tmp/empty
+
 # Ignoring directories with actual content
 # to transform
+# IMAGES
 workplace/images/jpg/in/*
 workplace/images/png/out/*
 !workplace/images/empty
@@ -13,6 +19,7 @@ workplace/images/png/out/*
 !workplace/images/png/in/empty
 !workplace/images/png/out/empty
 
+# SCRIPTS
 workplace/scripts/bash/*
 !workplace/scripts/empty
 !workplace/scripts/bash/empty
