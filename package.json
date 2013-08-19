@@ -16,5 +16,10 @@
   "gitHead": "1a8bc8942b8d81d24be1a135d59f5ba5c134135a",
   "bugs": {
     "url": "https://github.com/CaptainQuirk/.batchelor/issues"
+  },
+  "dependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-watch": "~0.5.2",
+    "grunt-contrib-imagemin": "~0.2.0"
   }
 }
