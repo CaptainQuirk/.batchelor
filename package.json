@@ -1,0 +1,20 @@
+{
+  "name": "Batchelor",
+  "version": "0.0.1",
+  "description": "Grunt watched directory structure where files can be submitted to any treatments in batch",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CaptainQuirk/.batchelor.git"
+  },
+  "author": "CaptainQuirk",
+  "license": "none",
+  "readmeFilename": "README.md",
+  "gitHead": "1a8bc8942b8d81d24be1a135d59f5ba5c134135a",
+  "bugs": {
+    "url": "https://github.com/CaptainQuirk/.batchelor/issues"
+  }
+}
