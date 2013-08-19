@@ -3,7 +3,7 @@ node_modules
 
 # Ignoring tmp directory content
 # but not the directory itself
-tmp
+tmp/*
 !tmp/empty
 
 # Ignoring directories with actual content
