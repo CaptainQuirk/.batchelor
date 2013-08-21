@@ -24,8 +24,7 @@ module.exports = function (grunt) {
       },
       bash: {
         options: {
-          event: [ 'added' ],
-          spawn: false
+          event: [ 'added' ]
         },
         files: [ 'workplace/scripts/bash/**' ],
         tasks: [ 'shell_runner:execute' ],
