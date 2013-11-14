@@ -38,9 +38,9 @@ module.exports = function (grunt) {
         files: [                         // Dictionary of files
           {
             expand: true,
-            cwd:    'images/png/in',
+            cwd:    'workplace/images/png/in',
             src:    [ '**/*.png' ],
-            dest:   'images/png/out/',
+            dest:   'workplace/images/png/out/',
             ext:    'png'
           }
         ] 
@@ -49,9 +49,9 @@ module.exports = function (grunt) {
         files: [                         // Dictionary of files
           {
             expand: true,
-            cwd:    'images/jpg/in',
+            cwd:    'workplace/images/jpg/in',
             src:    [ '**/*.jpeg', '**/*.jpg' ],
-            dest:   'images/jpg/out/',
+            dest:   'workplace/images/jpg/out/',
             ext:    'jpg'
           }
         ]
@@ -73,7 +73,7 @@ module.exports = function (grunt) {
   // Loading plugins. They have to be loaded one at a time
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
-  grunt.loadNpmTasks('grunt-shell-runner');
+  //grunt.loadNpmTasks('grunt-shell-runner');
 
   grunt.registerTask('default', 'watch', 'imagemin');
 };
