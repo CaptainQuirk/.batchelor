@@ -10,21 +10,24 @@ module.exports = function (grunt) {
     watch: {
       png: {
         options: {
-          event: [ 'added' ]
+          event: [ 'added' ],
+          livereload: true
         },
         files: [ 'images/png/in/**/*.png' ],
         tasks: [ 'imagemin:png' ]
       },
       jpg: {
         options: {
-          event: [ 'added' ]
+          event: [ 'added' ],
+          livereload: true
         },
         files: [ 'images/jpg/in/**/*.jpg', 'images/jpg/in/**/*.jpeg' ],
         tasks: [ 'imagemin:jpg' ]       
       },
       bash: {
         options: {
-          event: [ 'added' ]
+          event: [ 'added' ],
+          livereload: true
         },
         files: [ 'workplace/scripts/bash/**' ],
         tasks: [ 'shell_runner:execute' ],
