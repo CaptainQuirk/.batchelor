@@ -10,6 +10,8 @@ tmp/*
 # to transform
 # IMAGES
 workplace/images/jpg/in/*
+workplace/images/jpg/out/*
+workplace/images/png/in/*
 workplace/images/png/out/*
 !workplace/images/empty
 !workplace/images/jpg/empty
