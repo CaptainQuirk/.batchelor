@@ -30,7 +30,7 @@ module.exports = function (grunt) {
           livereload: true
         },
         files: [ 'workplace/scripts/bash/**' ],
-        tasks: [ 'shell_runner:execute' ],
+        tasks: [ 'shell_runner:execute' ]
       }
     },
     imagemin: {
